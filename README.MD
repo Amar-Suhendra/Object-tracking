@@ -1,5 +1,7 @@
 # Object Tracking
 
+This repo based on tutorial from [PyImageSearch](https://www.pyimagesearch.com/2018/07/30/opencv-object-tracking/).
+
 ## Getting Started
 
 Install library yang dibutuhkan
@@ -8,14 +10,18 @@ Install library yang dibutuhkan
 pip install numpy
 pip install scipy
 pip install imutils
+pip install opencv-python or opencv-contrib-python
+
 ```
 
-## The Centroid tracking algorithm
+## How to run
 
-Algoritma ini menghitung centroid dari objek yang terdeteksi dan membandingkan centroid yang baru dengan centroid yang lama. Jika centroid yang baru dan centroid yang lama memiliki jarak yang cukup dekat, maka objek tersebut dianggap sebagai objek yang sama. Jika centroid yang baru dan centroid yang lama memiliki jarak yang cukup jauh, maka objek tersebut dianggap sebagai objek yang baru.
+```
 
-## How the centroid tracking algorithm works
+python3 object_tracker.py --prototxt deploy.prototxt --model res10_300x300_ssd_iter_140000.caffemodel
 
-1. Menerima kooridinat bounding box dari objek yang terdeteksi.
-   Algoritma centroid berasumsi bawah user mengirim satu set bounding box memiliki x dan y pada setiap frame
-2.
+```
+
+```
+
+```
